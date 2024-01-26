@@ -15,6 +15,10 @@ export default {
       type: String,
       required: true,
     },
+    mode: {
+      type: String,
+      default: '',
+    },
   },
   computed: {
     isActive() {
@@ -22,6 +26,7 @@ export default {
     },
     classes() {
       return {
+        [this.mode]: this.mode,
         active: this.isActive,
       };
     },
@@ -29,10 +34,6 @@ export default {
 }
 </script>
 <style scoped>
-div {
-  padding: 0 .5rem;
-}
-
 div a {
   color: white;
   text-decoration: none;
@@ -40,5 +41,14 @@ div a {
 
 div a.active {
   color: #ccc;
+}
+
+.nav-link {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
 }
 </style>

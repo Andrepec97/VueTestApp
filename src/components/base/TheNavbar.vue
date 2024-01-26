@@ -1,12 +1,13 @@
 <template>
   <div>
     <nav>
-      <div class="right-side">
-        <BaseNavbarLink to="/" label="Home"/>
-        <BaseNavbarLink to="/about" label="About"/>
-      </div>
       <div class="left-side">
-        <base-button type="button" mode="outline-light">Login</base-button>
+        <BaseNavbarLink mode="nav-link" to="/" label="Home"/>
+        <BaseNavbarLink mode="nav-link" to="/about" label="About"/>
+        <BaseNavbarLink mode="nav-link" to="/anagrafiche" label="Elenco Anagrafiche"/>
+      </div>
+      <div class="right-side">
+        <base-button type="button" mode="outline-light">Log Out</base-button>
       </div>
     </nav>
   </div>
@@ -23,18 +24,23 @@ export default {
 </script>
 <style scoped>
 nav {
+  position: relative;
   display: flex;
-  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   background-color: #0d6efd;
-  color: white;
 }
 nav .right-side {
   flex: 1;
   display: flex;
+  margin-right: .5rem;
+  justify-content: flex-end;
 }
 nav .left-side {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
 }
 </style>

@@ -6,9 +6,5 @@ import TheNavbar from "./components/base/TheNavbar.vue";
   <header>
     <TheNavbar />
   </header>
-  <main>
-  </main>
+  <router-view />
 </template>
-
-<style scoped>
-</style>

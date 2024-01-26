@@ -8,8 +8,9 @@ import BaseButton from "@/components/base/BaseButton.vue";
 const router = createRouter({
     history: createWebHistory(),
     routes : [
-        { path: '/', component: App },
-        { path: '/about', component: App },
+        {path: '/', redirect: '/login'},
+        {path: '/login', component: () => import('@/views/Login.vue')},
+        {path: '/anagrafiche', component: () => import('@/views/AnagraficheList.vue')},
     ]
 });
 const app = createApp(App);
