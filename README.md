@@ -1,35 +1,17 @@
-# vue-test-app
+# Vue Test App
 
-This template should help get you started developing with Vue 3 in Vite.
+## Why this project?
+This project is a test project to learn Vue.js.
+The App has no real purpose, it's just a test project to learn Vue.js and to learn how to deploy it with CI/CD.
 
-## Recommended IDE Setup
+## What is this project?
+This project is a simple Vue.js App that displays a list of users and their details.
+And allows you to add new users or delete existing ones.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## How to run this project?
+1. Clone this repository
+2. Run `npm install`
+3. Run `npm run serve`
+4. Open your browser and go to `http://localhost:5173/`
+5. Enjoy!
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
